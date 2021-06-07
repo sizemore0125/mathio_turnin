@@ -1,0 +1,84 @@
+.main-header {
+  background-color: #0aa286;
+  height: 90px;
+  z-index: 12;
+  width: 100%;
+  top: 0;
+}
+
+.main-header .logo {
+  float: left;
+  line-height: 80px;
+  padding-left: 25px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+
+.main-header .logo em {
+  height: inherit;
+  font-style: normal;
+  color: #fff;
+  padding: 7px;
+}
+
+.logo-image {
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+
+.main-nav li:hover a,
+.main-nav li.active a {
+  border: 2px solid #3185fc;
+}
+
+.main-menu {
+  margin: 0;
+  float: right;
+  padding-right: 60px;
+}
+
+.main-menu li {
+  display: inline-block;
+  line-height: 79px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.main-menu li a {
+  padding: 10px 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 760px) {
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 90px; */
+    float: left;
+    padding: 0;
+    top: 90px;
+  }
+
+  .main-menu li {
+    margin: 0;
+    width: calc(100vw - 1rem);
+    background-color: #022e26;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .main-header .logo em {
+    visibility: hidden;
+    height: 0px;
+    font-size: 0px;
+  }
+}

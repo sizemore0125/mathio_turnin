@@ -1,0 +1,95 @@
+.loginbox {
+  height: 500px;
+  width: 500px;
+  background-color: #0aa286;
+  border-radius: 10px;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 1rem;
+  box-sizing: border-box;
+  padding: 40px 50px;
+}
+
+.login-link {
+  transition: color 0.15s;
+}
+
+.login-link:link {
+  color: #fff;
+  font-size: 18px;
+}
+
+.login-link:visited {
+  color: white;
+}
+
+.login-link:hover {
+  color: #92befa;
+}
+
+.welcome-message {
+  color: #fff;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.login-instructions {
+  color: #fff;
+  margin: 0;
+  padding: 0 0 15px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox label {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #0aa286;
+  font-size: 1.25rem;
+  transition: box-shadow 0.15s;
+}
+
+.loginbox input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+.login-submit {
+  color: #0aa286;
+  height: 2rem;
+  width: 6rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-style: bolder;
+  margin: 1rem 0.5rem;
+  transition: box-shadow 0.15s;
+}
+
+.login-submit:hover {
+  outline: 0;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.25);
+}
+
+.error-message {
+  height: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+}

@@ -1,0 +1,328 @@
+.teacher-tabs {
+  background-color: white;
+}
+
+.tab-text {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.teacher-form-page {
+  width: 100fr;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%233185fc'/%3E%3Cstop offset='1' stop-color='%230aa286'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e05263'/%3E%3Cstop offset='1' stop-color='%23eeb868'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.teacher-form-format {
+  width: 600px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 55px 95px 68px 95px;
+}
+
+.teacher-create-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.teacher-create-heading {
+  width: 100%;
+  display: block;
+  font-size: 2rem;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 3rem;
+  font-weight: bold;
+}
+
+.teacher-input-area {
+  width: calc((100% - 40px) / 2);
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  margin-bottom: 34px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+.full-input-area {
+  width: calc(100% - 40px);
+}
+
+.teacher-input-label {
+  font-size: 0.9rem;
+  color: #555555;
+  line-height: 1.5;
+  text-transform: uppercase;
+  width: 100%;
+  padding-bottom: 0.75rem;
+}
+
+.teacher-input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+  height: 3rem;
+  width: 100%;
+  background: transparent;
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.2;
+  padding: 0 25px;
+  box-sizing: border-box;
+  border: none;
+  font-weight: bold;
+  transition: all 0.15s;
+}
+
+textarea.teacher-input {
+  width: 100%;
+  min-height: 162px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+  resize: vertical;
+}
+
+.teacher-input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 10px rgba(10, 162, 134, 0.25);
+}
+
+.submit-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.submit-button {
+  background: rgb(51, 51, 51);
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 55px;
+  border-radius: 27px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.submit-button-disabled {
+  background: rgb(128, 128, 128);
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 55px;
+  border-radius: 27px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.submit-button-span {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.submit-button-text {
+  text-align: center;
+}
+
+.arrow-icon {
+  fill: white;
+  transition: all 0.4s;
+  margin: 0.83rem 0px 0.83rem 8px;
+  display: inline-block;
+}
+
+.submit-button:hover {
+  background-color: rgb(90, 90, 90);
+  cursor: pointer;
+}
+.submit-button:hover > .submit-button-span > .arrow-icon {
+  transform: translate(10px);
+}
+
+.teacher-error-message {
+  display: inline-block;
+  position: relative;
+  top: -4.25rem;
+  left: 50%;
+  height: 0;
+}
+
+/* ==================TeacherReview================ */
+
+.teacher-review-heading {
+  color: #333333;
+}
+
+.teacher-review-layout {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 200px 100fr;
+}
+
+/* ====================SideBar==================== */
+
+.list-group {
+  /* grid-column-start: 1;
+  grid-column-end: span col2-start; */
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+}
+
+.list-group-item {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.list-group-item.lg-active {
+  background-color: #3185fc;
+  color: white;
+}
+
+.list-group-item:hover:not(.lg-active) {
+  background-color: #555;
+  color: white;
+}
+
+/* ===================Table====================== */
+
+.table-container {
+  width: calc(92vw - 200px);
+  overflow-x: scroll;
+}
+
+.react-tabs__tab-panel {
+  margin: 0;
+  background: linear-gradient(135deg, #3185fc63, #3185fc23);
+}
+
+.table {
+  width: 150%;
+  table-layout: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.table th,
+td {
+  height: 45px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.table th {
+  color: white;
+}
+
+.table thead th {
+  background-color: #3185fc;
+}
+
+.table tbody tr {
+  transition: all 0.15s;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.table tbody td {
+  position: relative;
+}
+
+.table-cell:hover {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  width: 100fr;
+  height: inherit;
+}
+
+/* =================StudentSubmissionView====================== */
+
+.stu-sub-title {
+  margin: 0;
+  padding: 5px 0 15px 0;
+}
+
+.score-input {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+.score-input h2 {
+  margin: 0rem 1rem;
+}
+
+.score-input input {
+  margin: 0.35rem 1rem 0.35rem 0rem;
+  font-size: 1.25rem;
+  width: 5rem;
+}
+
+.student-submission {
+  position: relative;
+}
+
+/* ===================ProblemPreview======================== */
+
+.prev-problem-body {
+  margin-left: 25vw;
+  width: 30vw;
+  font-size: 1.25rem;
+}
+
+.toastProgress {
+  background: #0aa286 !important;
+}
+
+.toastBody {
+  color:#333333 !important;
+}

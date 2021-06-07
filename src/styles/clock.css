@@ -1,0 +1,40 @@
+figure {
+  height: 500px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.outline {
+  stroke: white;
+  stroke-width: 1;
+}
+
+.second {
+  stroke: white;
+  stroke-width: 2;
+}
+
+.hour {
+  stroke: white;
+  stroke-width: 4;
+}
+
+.second-hand {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.minute-hand {
+  stroke: white;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.hour-hand {
+  stroke: white;
+  stroke-width: 12;
+  stroke-linecap: round;
+}

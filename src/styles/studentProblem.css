@@ -1,0 +1,115 @@
+.heading {
+  display: grid;
+  grid-template-columns: auto 60fr 20fr;
+  background: white;
+  border-bottom: lightgray double 3px;
+  width: 100%;
+}
+
+.probTitle {
+  margin-left: 2rem;
+}
+
+.shape-instructions {
+  margin-left: 10%;
+}
+
+.toolBar {
+  display: flex;
+  width: 100fr;
+  height: auto;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tbutton {
+  background-color: white;
+  border: none;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.tbutton:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.activetbutton {
+  background-color: #e05263;
+}
+
+.activetbutton:hover {
+  background-color: #e47986;
+}
+
+.canvas:hover {
+  cursor: crosshair;
+}
+
+.navHead {
+  height: 30px;
+  width: 100fr;
+  background: black;
+}
+
+.slider {
+  appearance: none;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #0aa286ff;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: white;
+  border: none;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: right;
+}
+
+.submit:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.problemBody {
+  position: absolute;
+  top: 150px;
+  left: 30vw;
+  width: 40vw;
+  font-size: 1.25rem;
+}
+
+.shape-container {
+  display: flex;
+  justify-content: center;
+  width: 100fr;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  width: 100fr;
+  background-color: rgba(57, 167, 142, 0.7);
+  padding: 20px;
+}

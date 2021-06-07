@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/navBar";
+import ProblemSelect from "./components/problemSelect";
+import StudentProblem from "./components/studentProblem";
+import SignUp from "./components/signup";
+import TeacherPage from "./components/teacher";
+import React, { Component } from "react";
+import { Route, Redirect, Switch } from "react-router-dom";
+import "./styles/globalStyles.css";
+import Login from "./components/login";
+import HomePage from "./components/homePage";
+import { ToastContainer } from "react-toastify";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <NavBar />
+        <main className="app-container">
+          <Switch>
+            <Route path="/home" component={HomePage}></Route>
+            <Route
+              path="/problemselect/:id/:type/:title"
+              component={StudentProblem}
+            ></Route>
+            <Route path="/problemselect" component={ProblemSelect}></Route>
+            <Route path="/teacher" component={TeacherPage}></Route>
+            <Route path="/signup" component={SignUp}></Route>
+            <Route path="/login" component={Login}></Route>
+            <Redirect from="/" exact to="/home"></Redirect>
+          </Switch>
+        </main>
+        <ToastContainer progressClassName="toastProgress" bodyClassName="toastBody" />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
